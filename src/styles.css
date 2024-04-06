@@ -1,125 +1,135 @@
+/*Base styles (extra small devices-for mobile phones)*/
+
 html{
-    font-size: 16px;
-}
-h1{
-    color: #b90b0b;
+    font-size: 14px;
 }
 body {
     padding: 0%;
     margin: 0%;
-    font-family: sans-serif;
-}
-@media screen and (min-width:768px ) {
-    body{
-        font-size: 24px;
-       
-    }
-}
-#navbar {
-    height: 45px;
-}
-
-#banner {
-    object-fit: cover;
-    
-}
-
-#about {
-    display: flex;
-    max-width: 800px;
-    margin: 0% auto;
-    padding-right: 8px;
-}
-.oppp{
-    color: #ed7979;
-}
-#description {
-    width: 50%;
-    border-radius: 0 8px;
-}
-
-#image {
-    width: 50%;
-   padding-left: 5px;
-
-}
-#star image{
-    border-radius: 5px;
-    width: 100%;
+    font-family:"Roboto" sans-serif;
+    color: #444444;
+    font-size: 1rem;
 }
 a{
     text-decoration: none;
+    color: #1D4ED8;
+    cursor: pointer;
 }
-#jobs-title{
-width: 100%;
-border-right: 1px solid gray;
-border-collapse: collapse;
-text-align: center;
+h1, h2, h3, h4, h5, h6{
+    font-family:"inter" sans-serif;
+    font-weight: 600;
+    color: #222222;
 }
-.jobs-row th {
-border-right: 1px solid gray;
-padding: 8px;
-background-color: aliceblue;
+h1{font-size:2.5rem;}
+h2{font-size:2rem;}
+h3{font-size:1.75rem;}
+h4{font-size:1.5rem;}
+h5{font-size:1.25rem;}
+h6{font-size:1rem;}
+#navbar {
+   padding:8px;
+   margin: 0;
 }
-.jobs-row td {
-    border: 1px solid gray;
-    padding: 8px;
-    text-align: left;
- }
- #jobs-title tr:nth-child(odd) {
-    background-color: ghostwhite;
- }
+#logo-with-text{
+    display: none;
+}
+#banner {
+    object-fit: cover;
+    height: 150px;
+    width: 100%;
+    
+}
+h1{
+    color: #b90b0b;
+    text-align: center;
+    margin: 12px 0 ;
+    margin-bottom: 6px;
+}
+#about {
+    display: flex;
+    max-width: 500px;
+    margin: 0% auto;
+    padding-right: 8px;
+    flex-direction:column;
+}
+#description {
+    font-size: 1.25rem;
+    border-radius: 0 8px;
+    margin: 0px 8px;
+}
+#star-image{
+    border-radius: 5px;
+    width: 100%;
+}
+#image {
+    width: 100%;
+   padding-left: 5px;
+}
 h2{
     text-align: center;
 }
 #jobs{
-    max-width: 800px;
+    max-width: 500px;
     margin: 0 auto;
     padding: 0 8px;
 }
-h3{
-    margin-bottom: 4px;
-    margin-top: 0%;
+
+#job-list{
+    display:block;
+    max-width: 500px;
+    margin: auto;
 }
-h1,h2,h3,h4,h5,h6{
-    font-family:sans-serif;
+#jobs-title{
+    display:none;
 }
-.apply{
-float: right;
+.job{
+    border: 1px solid gray;
+    padding: 8px;
+    margin: 8px;
+    border-radius: 5px;
+}
+.job-title{
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: black;
+}
+.job-detail{
+    margin-top:4px;
+    color:#222222;
 }
 #application{
-   max-width: 800px;
-   padding: 0 8px;
-   margin: 0 auto;
-}
-#application-form div{
-    margin: 18px;
-}
-#application-form label{
-font-weight:600;
-}
-#application-form input , select, textarea {
-    padding: 5px;
-    margin-top: 5px;
-    border-radius: 5px;
-    border: solid gray;
-    font-size: 1.25rem;
-}
-.form-group textarea {
-    width: 80%;
-    font-family: Roboto sans-serif;
-}
-.form-group input[type="checkbox"]{
-    width: 16px;
-    height: 16px;
-}
-.form-group input[type="submit"]{
-    background-color: #3B82F6;
-    color: white;
-    font-weight: 600;
-    cursor: pointer;
-}
-#footer{
+    max-width: 500px;
+    padding: 0 8px;
+    margin: 0 auto;
+ }
+ #application-form div{
+     margin: 18px;
+ }
+ #application-form label{
+ font-weight:600;
+ }
+ #application-form input , select, textarea {
+     padding: 5px;
+     margin-top: 5px;
+     border-radius: 5px;
+     border: solid gray;
+     font-size: 1.25rem;
+ }
+ .form-group textarea {
+     width: 80%;
+     font-family: Roboto sans-serif;
+ }
+ .form-group input[type="checkbox"]{
+     width: 16px;
+     height: 16px;
+ }
+ .form-group input[type="submit"]{
+     background-color: #3B82F6;
+     color: white;
+     font-weight: 600;
+     cursor: pointer;
+ }
+ #footer{
     background-color: lightgray;
     padding: 8px;
     margin-top: 32px;
@@ -141,3 +151,150 @@ font-weight:600;
 .copyright{
     color: grey;
 }
+
+
+/*Small Devices(tab)*/
+@media screen and (min-width:576px){
+    html{
+        font-size: 16px;
+    }
+    #logo-with-text{
+        display: block;
+    }
+    #logo{
+        display: none;
+    }
+    #banner {
+        object-fit: cover;
+        height: 220px;
+    }
+    h1{
+        color: #b90b0b;
+        text-align: center;
+        margin: 16px 0 ;
+    }
+    
+   
+}
+@media screen and (min-width:768px ) {
+    body{
+        font-size: 24px;
+       
+    }
+    html{
+        font-size: 20px;
+    }
+     #banner {
+        object-fit: cover;
+        height: 320px;
+    }
+    h1{
+        color: #b90b0b;
+        text-align: center;
+        margin: 20px 0 ;
+    }
+    #about {
+        max-width: 800px;
+        flex-direction: row;
+    }
+    #team{
+        width:50%;
+    }
+    #description {
+        padding-right: 8px;
+        width:50%;
+    }
+    #star-image{
+        border-radius: 5px;
+        width: 100%;
+        height:350px;
+    }
+    #image {
+        width: 50%;
+       padding-left: 5px;
+       
+    }
+    #jobs{
+       min-width: 800px;
+    }
+    #job-list{
+
+        display: none;
+    }
+    #jobs-title{
+        display:table;
+    }
+    #jobs-title{
+        width: 100%;
+        border-right: 1px solid gray;
+        border-collapse: collapse;
+        text-align: center;
+        }
+        .jobs-row th {
+            border-right: 1px solid gray;
+            padding: 8px;
+            background-color: aliceblue;
+            }
+            .jobs-row td {
+                border: 1px solid gray;
+                padding: 8px;
+                text-align: left;
+             }
+             #jobs-title tr:nth-child(odd) {
+                background-color: ghostwhite;
+             }
+             #application{
+                max-width: 800px;
+             }
+}
+
+
+/*Medium Devices(Laptop)*/
+@media screen and (min-width:992px){
+    
+}
+
+
+
+/*Large Devices(Destop)*/
+@media screen and (min-width:1200px)  {
+    
+}
+
+
+
+/*
+
+
+
+
+
+
+
+
+
+
+.oppp{
+    color: #ed7979;
+}
+
+
+
+
+
+
+
+
+h3{
+    margin-bottom: 4px;
+    margin-top: 0%;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family:sans-serif;
+}
+.apply{
+float: right;
+}
+
+
+*/
